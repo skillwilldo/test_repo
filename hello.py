@@ -23,7 +23,7 @@ st.write("### Header 2")
 st.write("#### Header 3")
 
 
-df=pd.read_csv(r"E:\My VS Code\streamlit\practice\marvel - Copy.csv")
+df=pd.read_csv("marvel - Copy.csv")
 st.write(df)
 
 st.write(df.columns)
@@ -40,4 +40,5 @@ st.dataframe(filtered_df)
 
 button1=st.button("Print")
 if button1:
+
     st.write(filtered_df)
